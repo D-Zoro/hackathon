@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming Experiences</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-900 text-white smooth-scroll">
+    <!-- Navbar -->
+    <nav class="bg-black p-4 fixed top-0 w-full z-10 shadow-lg">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold text-blue-400">ProgShare</h1>
+        <ul class="flex space-x-4">
+          <li>
+            <a href="#experiences" class="hover:text-blue-400">Experiences</a>
+          </li>
+          <li><a href="share.html" class="hover:text-blue-400">Share</a></li>
+          <li><a href="#news" class="hover:text-blue-400">News Feed</a></li>
+          <li><a href="#about" class="hover:text-blue-400">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 px-5">
+      <div class="container mx-auto text-center py-16">
+        <h2 class="text-3xl font-bold mb-4">Share Your Programming Journey</h2>
+        <p class="text-gray-400">
+          Connect with fellow students, share your experiences, and learn from
+          each other.
+        </p>
+      </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="px-5 py-10">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-semibold mb-6">Student Experiences</h2>
+        <div
+          id="experience-feed"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          <!-- Experience feed populated from scripts.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- News Feed Section -->
+    <section id="news" class="px-5 py-10">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-semibold mb-6">News Feed</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="hover-card bg-gray-800 p-4 rounded-lg shadow-lg">
+            <img
+              src="https://via.placeholder.com/200x150"
+              alt="News 1"
+              class="w-full rounded-lg mb-4"
+            />
+            <h3 class="font-bold text-blue-400">Article 1</h3>
+            <p>Latest news about student programming achievements...</p>
+          </div>
+          <div class="hover-card bg-gray-800 p-4 rounded-lg shadow-lg">
+            <img
+              src="https://via.placeholder.com/200x150"
+              alt="News 2"
+              class="w-full rounded-lg mb-4"
+            />
+            <h3 class="font-bold text-blue-400">Article 2</h3>
+            <p>Exciting updates from recent programming events...</p>
+          </div>
+          <div class="hover-card bg-gray-800 p-4 rounded-lg shadow-lg">
+            <img
+              src="https://via.placeholder.com/200x150"
+              alt="News 3"
+              class="w-full rounded-lg mb-4"
+            />
+            <h3 class="font-bold text-blue-400">Article 3</h3>
+            <p>New programming tools and tips for students...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="px-5 py-10 bg-gray-800 text-center">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-semibold mb-4">About Us</h2>
+        <p class="text-gray-400">
+          We are a community of programming students sharing experiences to help
+          each other grow.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-black text-center">
+      <p class="text-gray-400">&copy; 2024 ProgShare. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
